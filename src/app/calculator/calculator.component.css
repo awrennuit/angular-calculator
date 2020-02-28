@@ -1,27 +1,3 @@
-.calculator {
-  background-color: #373547;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 40px #F7A8B8;
-}
-
-.calculator-screen {
-  width: 400px;
-  font-size: 3em;
-  height: 80px;
-  border: none;
-  background-color: #252525;
-  color: #fff;
-  text-align: right;
-  padding: 0 20px;
-  font-family: 'Orbitron', sans-serif;
-  box-shadow: inset 0 0 5px #fff;
-}
-
 button {
   height: 60px;
   background-color: #fff;
@@ -40,10 +16,6 @@ button:hover {
   background-color: #2d6f8a;
 }
 
-.operator {
-  color: #fff;
-}
-
 .all-clear {
   background-color: #f17377;
   border-color: #b0353a;
@@ -52,6 +24,37 @@ button:hover {
 
 .all-clear:hover {
   background-color: #f0595f;
+}
+
+.calculator {
+  background-color: #373547;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 40px #F7A8B8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.calculator-screen {
+  width: 400px;
+  font-size: 3em;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding: 0 20px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: inset 0 0 5px #fff;
 }
 
 .equal-sign {
@@ -65,9 +68,16 @@ button:hover {
   background-color: #775158;
 }
 
-.calculator-keys {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+.main-container {
+  height: 500px;
+  width: 400px;
+  box-shadow: 0 0 100px #55CDFC;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.operator {
+  color: #fff;
 }
