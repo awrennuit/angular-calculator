@@ -8,6 +8,6 @@ This is a calculator built with the help of a [tutorial](https://www.techiediari
 
 - Angular
 
-## Installation
+## To Run
 
 - `ng serve --open` from the command line
